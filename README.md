@@ -1,3 +1,3 @@
-# Veebilehe Projekt
+# Veebilehe peamine arendusharu
 
-Siia tuleb wiki?
+Siia haru peale ilmub terve meie projekti arendus kokkupanduna.
