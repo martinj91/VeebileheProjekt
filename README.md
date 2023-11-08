@@ -1,3 +1,3 @@
 # Veebilehe peamine arendusharu
 
-Siia haru peale ilmub terve meie projekti arendus kokkupanduna.
+Siin tegutseb Hans Harald Peep, kes arendab rakenduse detailsema tutvustuse alamlehekülge
