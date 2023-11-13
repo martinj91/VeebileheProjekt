@@ -1,4 +1,24 @@
-table,th,td{
-    border:2px solid #000000;
+body {
+    font-family:Arial, Helvetica, sans-sherif;
+    margin: 20px;
+}
+h1,h2 {
+    color: #000000
+}
+table{
+    border-collapse: collapse;
+    margin-top:auto;
     width:100%;
+}
+th,td {
+    border: 1px solid #ddd;
+    padding:10px;
+    text-align: center;
+}
+th {
+    background-color: #8d8d8d;
+    opacity: 90%;
+}
+.plan {
+    font-weight: bold;
 }
