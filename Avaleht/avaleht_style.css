@@ -1,16 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-:root{
+:root {
     --primary-color: #007AF3;
 }
 
-body{
+body {
     background: #F2F2F2;
     margin: 0;
     font-family: "Poppins";
 }
 
-.navigeerimisriba{
+.navigeerimisriba {
     background: white;
     padding: 1em;
+}
+
+.navigeerimisriba .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.navigeerimisriba .logo span {
+    color: var(--primary-color);
+}
+
+.navigeerimisriba nav {
+    display: none;
+}
+
+.navigeerimisriba .kast {
+    display: flex;
+    place-content: space-between;
+}
+
+.navigeerimisriba .mobiil-menüü {
+    cursor: pointer;
+    width: 2.5em;
+    height: 2em;
+    padding: 0;
+}
+
+a {
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
 }
