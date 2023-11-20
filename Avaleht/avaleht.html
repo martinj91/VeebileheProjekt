@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTD rakendus</title>
     <link rel="stylesheet" href="avaleht_style.css">
+    <script type="text/javascript" src="avaleht_efektid.js"></script>
 </head>
 <body>
     <div class="navigeerimiriba">
@@ -38,12 +39,12 @@
                 <div class="avakuva-cta">
                     <a href="#" class="peamine-cta">Proovi tasuta</a>
                     <a href="#" class="vaata-video-cta">
-                        <!-- <img src="" alt="Vaata videot">Vaata videot -->
+                        <img src="" alt="Vaata videot">Vaata videot
                     </a>
                 </div>
             </div>
 
-            <!-- <img src="" class="avakuva-pilt" alt="Illustratsioon"> -->
+            <img src="" class="avakuva-pilt" alt="Illustratsioon">
         </div>
     </section>
 
@@ -57,6 +58,58 @@
                 <li>Reaalajas Koostöö Võimalus</li>
                 <li>Ja Palju Muud Lahedat...</li>
             </ul>
+
+            <img src="Pildid_avaleht/telefoni_hoidmine.jpg" alt="Inimene hoiab telefoni">
+        </div>
+    </section>
+
+    <section class="kommentaaride-sektsioon">
+        <div class="kast">
+            <ul>
+                <li>
+                    <img src="Pildid_avaleht/sander.jpg" alt="Inimene1">
+
+                    <blockquote>"Mitte midagi ei aidanud mu hajameelsuse vastu ja unustasin pidevalt, kuid selle rakedusega saab mul iga viimne kui ülesanne tehtud."</blockquote>
+                    <cite> - Sander Sirge</cite>
+                </li>
+                <li>
+                    <img src="Pildid_avaleht/martin.jpg" alt="">
+
+                    <blockquote></blockquote>
+                    <cite>- Martin Jaani</cite>
+                </li>
+                <li>
+                    <img src="Pildid_avaleht/hans.jpg" alt="">
+
+                    <blockquote></blockquote>
+                    <cite>- Hans Harald Peep</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="kontakti-sektsioon">
+        <div class="kast">
+            <div class="kontakt-vasak">
+                <h2>Kontakt</h2>
+
+                <form action="mailto:sandersirge@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Nimi</label>
+                    <input type="text" id="name" name="name" placeholder="Sinu nimi">
+
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Sinu e-mail">
+
+                    <label for="message">Teie sõnum</label>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Sisesta oma sõnum siia"></textarea>
+
+                    <input type="submit" class="saada-sõnum-cta" value="Saada sõnum">
+                </form>
+            </div>
+
+            <div class="kontakt-parem">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133815.57475331452!2d26.627516049999997!3d58.395619749999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36d8d5671d25%3A0x6b0977cc00630ff6!2sTartu%20linn%2C%20Tartu%20maakond!5e0!3m2!1set!2see!4v1689176679498!5m2!1set!2see" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 </body>
