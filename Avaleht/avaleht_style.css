@@ -55,3 +55,179 @@ ul {
 section {
     padding: 5em 2em;
 }
+
+.avakuva {
+    text-align: center;
+}
+
+.vasak-tulp .alapealkiri {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 0.3em;
+}
+
+.vasak-tulp h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: 0.2em;
+}
+
+.vasak-tulp .peamine-cta {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.6em 1.3em;
+    font-size: 1.4em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.vasak-tulp .vaata-video-cta {
+    display: block;
+    margin-top: 1em;
+}
+
+.vasak-tulp .vaata-video-cta img {
+    margin-right: 0.5em;
+    width: 1.2em
+}
+
+.avakuva-pilt {
+    width: 20em;
+    margin-top: 3em;
+}
+
+section.detailid-sektsioon {
+    background: #20272e;
+    color: white;
+}
+
+ul.detailid-loetelu {
+    margin: 0;
+    padding-left: 0.1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.detailid-loetelu li {
+    font-size: 1.1em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+ul.detailid-loetelu li:before {
+    content: "";
+    left: -2em;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../Pildid_avaleht/bullet.png");
+    background-size: contain;
+    margin-right: 0.5em;
+}
+
+.detailid-sektsioon img {
+    display: none;
+}
+
+.kommentaaride-sektsioon {
+    background: var(--primary-color);
+    color: white;
+}
+
+.kommentaaride-sektsioon li {
+    background-color: #006BD6;
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+}
+
+.kommentaaride-sektsioon li img {
+    width: 5em;
+    height: 5em;
+    border: 5px solid #006BD6;
+    border-radius: 50%;
+    margin-top: -4.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: 0.8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+nav.menüü-nupp {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+}
+
+nav ul.peamine-nav {
+    margin-top: 5em;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+nav li a:hover {
+    font-weight: bold;
+}
+
+.mobiil-menüü-välju {
+    height: 40px;
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+}

@@ -3,9 +3,9 @@ const mobileBtn = document.getElementById('mobiil-cta');
     mobileBtnExit = document.getElementById('mobiil-välju');
 
 mobileBtn.addEventListener('click', () => {
-    nav.classList.add('menu-btn');
+    nav.classList.add('menüü-nupp');
 })
 
 mobileBtnExit.addEventListener('click', () => {
-    nav.classList.remove('menu-btn');
+    nav.classList.remove('menüü-nupp');
 })
