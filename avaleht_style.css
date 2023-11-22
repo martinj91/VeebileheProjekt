@@ -231,3 +231,61 @@ nav li a:hover {
     margin: 0.5em;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 768px) {
+    .mobiil-menüü, .mobiil-menüü-välju {
+        display: none;
+    }
+    .navigeerimisriba .kast {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+    .navigeerimisriba nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navigeerimisriba nav ul {
+        display: flex;
+    }
+
+    .navigeerimisriba nav a {
+        color: black;
+        font-size: 1em;
+        padding: 0.1em 1em;
+    }
+
+    .navigeerimisriba nav ul.peamine-nav {
+        margin: 0;
+    }
+
+    .navigeerimisriba nav li.hetkene a {
+        font-weight: bold;
+    }
+
+    .navigeerimisriba nav li.premium-cta a {
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        font-weight: bold;
+        border-radius: 5em;
+        margin-top: -0.2em;
+    }
+
+    .navigeerimisriba nav li.premium-cta a:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .kast {
+        width: 1080px;
+        margin: 0 auto;
+    }
+}
