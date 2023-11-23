@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
 :root {
     --primary-color: #007AF3;
 }
@@ -14,27 +13,22 @@ body {
     background: white;
     padding: 1em;
 }
-
 .navigeerimisriba .logo {
     text-decoration: none;
     font-weight: bold;
     color: black;
     font-size: 1.2em;
 }
-
 .navigeerimisriba .logo span {
     color: var(--primary-color);
 }
-
 .navigeerimisriba nav {
     display: none;
 }
-
 .navigeerimisriba .kast {
     display: flex;
     place-content: space-between;
 }
-
 .navigeerimisriba .mobiil-menüü {
     cursor: pointer;
     width: 2.5em;
@@ -66,13 +60,11 @@ section {
     color: gray;
     letter-spacing: 0.3em;
 }
-
 .vasak-tulp h1 {
     font-size: 2.5em;
     line-height: 1.3em;
     margin-top: 0.2em;
 }
-
 .vasak-tulp .peamine-cta {
     background: var(--primary-color);
     color: white;
@@ -83,12 +75,10 @@ section {
     font-weight: bold;
     display: inline-block;
 }
-
 .vasak-tulp .vaata-video-cta {
     display: block;
     margin-top: 1em;
 }
-
 .vasak-tulp .vaata-video-cta img {
     margin-right: 0.5em;
     width: 1.2em
@@ -110,14 +100,12 @@ ul.detailid-loetelu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
-
 ul.detailid-loetelu li {
     font-size: 1.1em;
     margin-left: 2em;
     margin-bottom: 1em;
     position: relative;
 }
-
 ul.detailid-loetelu li:before {
     content: "";
     left: -2em;
@@ -137,7 +125,6 @@ ul.detailid-loetelu li:before {
     background: var(--primary-color);
     color: white;
 }
-
 .kommentaaride-sektsioon li {
     background-color: #006BD6;
     text-align: center;
@@ -146,7 +133,6 @@ ul.detailid-loetelu li:before {
     margin: 0 auto 5em auto;
     border-radius: 1em;
 }
-
 .kommentaaride-sektsioon li img {
     width: 5em;
     height: 5em;
@@ -207,11 +193,9 @@ nav {
     height: 100vh;
     padding: 1em;
 }
-
 nav ul.peamine-nav {
     margin-top: 5em;
 }
-
 nav li a {
     color: white;
     text-decoration: none;
@@ -220,7 +204,6 @@ nav li a {
     font-size: 1.3em;
     text-align: right;
 }
-
 nav li a:hover {
     font-weight: bold;
 }
@@ -250,25 +233,20 @@ nav li a:hover {
         width: 100%;
         padding: 0;
     }
-
     .navigeerimisriba nav ul {
         display: flex;
     }
-
     .navigeerimisriba nav a {
         color: black;
         font-size: 1em;
         padding: 0.1em 1em;
     }
-
     .navigeerimisriba nav ul.peamine-nav {
         margin: 0;
     }
-
     .navigeerimisriba nav li.hetkene a {
         font-weight: bold;
     }
-
     .navigeerimisriba nav li.premium-cta a {
         color: var(--primary-color);
         border: 3px solid var(--primary-color);
@@ -276,69 +254,55 @@ nav li a:hover {
         border-radius: 5em;
         margin-top: -0.2em;
     }
-
     .navigeerimisriba nav li.premium-cta a:hover {
         background-color: var(--primary-color);
         color: white;
     }
 }
-
 @media only screen and (min-width: 1080px) {
     .kast {
         width: 1080px;
         margin: 0 auto;
     }
-
     section {
         padding: 10em 4em;
     }
-
     .avakuva .kast {
         display: flex;
         justify-content: space-between;
         text-align: left;
     }
-
     .avakuva .kast .vasak-tulp {
         margin: 3em 3em 0 5em;
     }
-
     .avakuva .kast .vasak-tulp h1 {
         font-size: 3em;
         width: 90%;
     }
-
     .avakuva-pilt {
         width: 30%;
         margin-right: 8em;
     }
-
     .avakuva-cta {
         display: flex;
     }
-
     .peamine-cta {
         margin-right: 1em;
     }
-
     ul.detailid-loetelu {
         display: block;
         margin-left: 5em;
     }
-
     ul.detailid-loetelu li {
         font-size: 1.4em;
     }
-
     ul.detailid-loetelu li:before {
         width: 30px;
         height: 30px;
     }
-
     .detailid-sektsioon {
         position: relative;
     }
-
     .detailid-sektsioon img {
         display: block;
         position: absolute;
@@ -346,23 +310,18 @@ nav li a:hover {
         width: 350px;
         bottom: -2em;
     }
-
     .kommentaaride-sektsioon ul {
         display: flex;
     }
-
     .kommentaaride-sektsioon ul li {
         margin: 0 1em;
     }
-
     .kontakti-sektsioon {
         position: relative;
     }
-
     .kontakti-sektsioon .kast {
         display: flex;
     }
-
     .kontakt-parem {
         position: absolute;
         right: 0;
@@ -370,12 +329,10 @@ nav li a:hover {
         width: 45%;
         height: 100%;
     }
-
     .kontakt-parem iframe {
         height: 100%;
     }
 }
-
 @media only screen and (min-width: 1450px) {
     .detailid-sektsioon:before {
         content: "";
@@ -386,7 +343,6 @@ nav li a:hover {
         left: 0;
         top: -4em;
     }
-    
     .detailid-sektsioon:after {
         content: "";
         position: absolute;
