@@ -288,4 +288,112 @@ nav li a:hover {
         width: 1080px;
         margin: 0 auto;
     }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .avakuva .kast {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .avakuva .kast .vasak-tulp {
+        margin: 3em 3em 0 5em;
+    }
+
+    .avakuva .kast .vasak-tulp h1 {
+        font-size: 3em;
+        width: 90%;
+    }
+
+    .avakuva-pilt {
+        width: 30%;
+        margin-right: 8em;
+    }
+
+    .avakuva-cta {
+        display: flex;
+    }
+
+    .peamine-cta {
+        margin-right: 1em;
+    }
+
+    ul.detailid-loetelu {
+        display: block;
+        margin-left: 5em;
+    }
+
+    ul.detailid-loetelu li {
+        font-size: 1.4em;
+    }
+
+    ul.detailid-loetelu li:before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .detailid-sektsioon {
+        position: relative;
+    }
+
+    .detailid-sektsioon img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        bottom: -2em;
+    }
+
+    .kommentaaride-sektsioon ul {
+        display: flex;
+    }
+
+    .kommentaaride-sektsioon ul li {
+        margin: 0 1em;
+    }
+
+    .kontakti-sektsioon {
+        position: relative;
+    }
+
+    .kontakti-sektsioon .kast {
+        display: flex;
+    }
+
+    .kontakt-parem {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+    }
+
+    .kontakt-parem iframe {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    .detailid-sektsioon:before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 20em;
+        background: var(--primary-color);
+        left: 0;
+        top: -4em;
+    }
+    
+    .detailid-sektsioon:before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 20em;
+        background: url("../Pildid_avaleht/punktid.png");
+        left: 4.5em;
+        top: 2em;
+    }
 }
