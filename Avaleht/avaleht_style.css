@@ -387,7 +387,7 @@ nav li a:hover {
         top: -4em;
     }
     
-    .detailid-sektsioon:before {
+    .detailid-sektsioon:after {
         content: "";
         position: absolute;
         width: 200px;
