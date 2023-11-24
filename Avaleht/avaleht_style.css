@@ -101,7 +101,7 @@ ul.detailid-loetelu {
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 ul.detailid-loetelu li {
-    font-size: 1.1em;
+    font-size: 0.9em;
     margin-left: 2em;
     margin-bottom: 1em;
     position: relative;
@@ -186,7 +186,7 @@ nav.menu-btn {
 nav {
     position: fixed;
     z-index: 999;
-    width: 66%;
+    width: 40%;
     right: 0;
     top: 0;
     background: #20272E;
