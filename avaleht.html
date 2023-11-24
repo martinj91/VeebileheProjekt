@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTD rakendus</title>
-    <link rel="stylesheet" href="avaleht_style.css">
+    <link rel="stylesheet" href="Avaleht/avaleht_style.css">
     <script src="Avaleht/avaleht_efektid.js"></script>
 </head>
 <body>
-    <div class="navigeerimiriba">
+    <div class="navbar">
         <div class="kast">
             <a class="logo" href="avaleht.html">Hoia<span>Meeles</span></a>
 
-            <img id="mobiil-cta" class="mobiil-menüü" src="Pildid_avaleht/menu.png" alt="Ava menüü">
+            <img id="mobiil-cta" class="mobiil-menüü" src="Pildid_avaleht/menu.svg" alt="Ava menüü">
 
             <nav>
                 <img id="mobiil-välju" class="mobiil-menüü-välju" src="Pildid_avaleht/exit.png" alt="Sule menüü">
@@ -39,12 +39,12 @@
                 <div class="avakuva-cta">
                     <a href="#" class="peamine-cta">Proovi tasuta</a>
                     <a href="#" class="vaata-video-cta">
-                        <img src="Pilid_avaleht/video.svg" alt="Vaata videot">Vaata videot
+                        <img src="Pildid_avaleht/video.svg" alt="Vaata videot">Vaata videot
                     </a>
                 </div>
             </div>
 
-            <img src="Pildid_avaleh/illustration.svg" class="avakuva-pilt" alt="Illustratsioon">
+            <img src="Pildid_avaleht/illustration.svg" class="avakuva-pilt" alt="Illustratsioon">
         </div>
     </section>
 
@@ -119,11 +119,11 @@
             mobileBtnExit = document.getElementById('mobiil-välju');
 
         mobileBtn.addEventListener('click', () => {
-            nav.classList.add('menüü-nupp');
+            nav.classList.add('menu-btn');
         })
 
         mobileBtnExit.addEventListener('click', () => {
-            nav.classList.remove('menüü-nupp');
+            nav.classList.remove('menu-btn');
         })
     </script>
 </body>

@@ -9,27 +9,27 @@ body {
     font-family: "Poppins";
 }
 
-.navigeerimisriba {
+.navbar {
     background: white;
     padding: 1em;
 }
-.navigeerimisriba .logo {
+.navbar .logo {
     text-decoration: none;
     font-weight: bold;
     color: black;
     font-size: 1.2em;
 }
-.navigeerimisriba .logo span {
+.navbar .logo span {
     color: var(--primary-color);
 }
-.navigeerimisriba nav {
+.navbar nav {
     display: none;
 }
-.navigeerimisriba .kast {
+.navbar .kast {
     display: flex;
     place-content: space-between;
 }
-.navigeerimisriba .mobiil-menüü {
+.navbar .mobiil-menüü {
     cursor: pointer;
     width: 2.5em;
     height: 2em;
@@ -112,8 +112,8 @@ ul.detailid-loetelu li:before {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url("../Pildid_avaleht/bullet.png");
-    background-size: contain;
+    background-image: url("../Pildid_avaleht/bullet.svg");
+    background-size: 1.4em;
     margin-right: 0.5em;
 }
 
@@ -179,7 +179,7 @@ iframe {
     height: 300px;
 }
 
-nav.menüü-nupp {
+nav.menu-btn {
     display: block;
 }
 
@@ -219,12 +219,12 @@ nav li a:hover {
     .mobiil-menüü, .mobiil-menüü-välju {
         display: none;
     }
-    .navigeerimisriba .kast {
+    .navbar .kast {
         display: grid;
         grid-template-columns: 180px auto;
         justify-content: unset;
     }
-    .navigeerimisriba nav {
+    .navbar nav {
         display: flex;
         justify-content: space-between;
         background: none;
@@ -233,28 +233,28 @@ nav li a:hover {
         width: 100%;
         padding: 0;
     }
-    .navigeerimisriba nav ul {
+    .navbar nav ul {
         display: flex;
     }
-    .navigeerimisriba nav a {
+    .navbar nav a {
         color: black;
         font-size: 1em;
         padding: 0.1em 1em;
     }
-    .navigeerimisriba nav ul.peamine-nav {
+    .navbar nav ul.peamine-nav {
         margin: 0;
     }
-    .navigeerimisriba nav li.hetkene a {
+    .navbar nav li.hetkene a {
         font-weight: bold;
     }
-    .navigeerimisriba nav li.premium-cta a {
+    .navbar nav li.premium-cta a {
         color: var(--primary-color);
         border: 3px solid var(--primary-color);
         font-weight: bold;
         border-radius: 5em;
         margin-top: -0.2em;
     }
-    .navigeerimisriba nav li.premium-cta a:hover {
+    .navbar nav li.premium-cta a:hover {
         background-color: var(--primary-color);
         color: white;
     }
