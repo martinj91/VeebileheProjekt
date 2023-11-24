@@ -77,11 +77,15 @@ section {
 }
 .vasak-tulp .vaata-video-cta {
     display: block;
+    text-decoration: none;
     margin-top: 1em;
+}
+.vasak-tulp .vaata-video-cta:hover {
+    font-weight: bold;
 }
 .vasak-tulp .vaata-video-cta img {
     margin-right: 0.5em;
-    width: 1.2em
+    width: 1.2em;
 }
 
 .avakuva-pilt {
@@ -158,6 +162,9 @@ input, textarea {
     border-radius: 0.3em;
     border: 1px solid gray;
     box-sizing: border-box;
+}
+textarea {
+    resize: none;
 }
 
 input[type=submit] {
