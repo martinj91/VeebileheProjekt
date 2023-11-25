@@ -158,11 +158,13 @@ label {
 input, textarea {
     width: 100%;
     padding: 0.8em;
-    margin-bottom: 1em;
     border-radius: 0.3em;
-    border: 1px solid gray;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+    outline: none;
     box-sizing: border-box;
 }
+
 textarea {
     resize: none;
 }
@@ -173,12 +175,28 @@ input[type=submit] {
     font-weight: bold;
     font-size: 1.3em;
     border: none;
+    margin-top: 0.5em;
     margin-bottom: 5em;
     border-radius: 5em;
     display: inline-block;
     padding: 0.8em 2em;
     width: unset;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.error-txt {
+    margin: 3px 0 10px;
+    font-size: 14.5px;
+    color: #D93025;
+    display: none;
+}
+.tekst-väli .error-txt {
+    margin-top: -5px;
 }
 
 iframe {
