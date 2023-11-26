@@ -199,6 +199,14 @@ input[type=submit]:hover {
     margin-top: -5px;
 }
 
+.väli.error .objekt {
+    border-color: #D93025;
+}
+
+.väli.error .error-txt {
+    display: block;
+}
+
 iframe {
     width: 100%;
     height: 300px;

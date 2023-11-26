@@ -101,33 +101,33 @@
                 <form action="#">
                     <div class="sisend-kast">
                         <label for="name">Nimi</label>
-                        <div class="sisend-väli">
+                        <div class="sisend-väli väli">
                             <input type="text" id="nimi" class="objekt" name="nimi" autocomplete="off" placeholder="Sinu täisnimi">
                             <div class="error-txt">*See on kohustuslik väli</div>
                         </div>
 
                         <label for="number">Telefoninumber</label>
-                        <div class="sisend-väli">
+                        <div class="sisend-väli väli">
                             <input type="text" id="number" class="objekt" name="number" autocomplete="off" placeholder="Sinu telefoninumber">
                             <div class="error-txt">*See on kohustuslik väli</div>
                         </div>
 
                         <label for="email">E-mail</label>
-                        <div class="sisend-väli">
+                        <div class="sisend-väli väli">
                             <input type="text" id="email" class="objekt" name="email" autocomplete="off" placeholder="Sinu e-mail">
-                            <div class="error-txt">*See on kohustuslik väli</div>
+                            <div class="error-txt email">*See on kohustuslik väli</div>
                         </div>
 
                         <label for="teema">Teema</label>
-                        <div class="sisend-väli">
+                        <div class="sisend-väli väli">
                             <input type="text" id="teema" class="objekt" name="teema" autocomplete="off" placeholder="Mis teemat sõnum puudutab?">
                             <div class="error-txt">*See on kohustuslik väli</div>
                         </div>
                     </div>
 
-                    <div class="tekst-väli">
+                    <div class="tekst-väli väli">
                         <label for="message">Teie sõnum</label>
-                        <textarea name="message" id="message" class="objekt" cols="30" rows="10" autocomplete="off" placeholder="Sisesta oma sõnum siia..."></textarea>
+                        <textarea name="message" id="sõnum" class="objekt" cols="30" rows="10" autocomplete="off" placeholder="Sisesta oma sõnum siia..."></textarea>
                         <div class="error-txt">*Sõnum ei saa olla tühi</div>
                     </div>
 
@@ -140,6 +140,7 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/Avaleht/avaleht_efektid.js"></script>
 </body>
