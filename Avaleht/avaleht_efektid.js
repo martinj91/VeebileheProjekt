@@ -39,26 +39,26 @@ window.addEventListener('DOMContentLoaded', ()=>{
     })
 })
 
-const form = document.querySelector('form');
-const name =  document.getElementById('name');
-const email = document.getElementById('email');
-const phone = document.getElementById('phone');
-const subject = document.getElementById('subject');
-const mess =  document.getElementById('message');
+const form = document.querySelector("form");
+const fullName =  document.getElementById("fullName");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const subject = document.getElementById("subject");
+const mess =  document.getElementById("message");
 
 function sendEmail() {
-    const bodyMessage = `Nimi: ${nimi.value}<br> E-mail: ${e_mail.value}<br>
-    Telefon: ${telefon.value}<br> Sõnum: ${teade.value}`;
+    const bodyMessage = `Nimi: ${fullName.value}<br> E-mail: ${email.value}<br>
+    Telefon: ${phone.value}<br> Sõnum: ${mess.value}`;
 
     Email.send({
-        SecureToken: 'a270c788-ea75-48bf-b41c-08a6788cb77d',
-        To: 'sandersirge@gmail.com',
+        SecureToken: "a270c788-ea75-48bf-b41c-08a6788cb77d",
+        To: "sandersirge@gmail.com",
         From: "projekt.kontaktivorm@gmail.com",
-        Subject: pealkiri.value,
+        Subject: subject.value,
         Body: bodyMessage
     }).then(
         message => {
-            if (message == 'OK') {
+            if (message == "OK") {
                 Swal.fire({
                     title: "Saadetud!",
                     text: "Teie sõnum on kätte saadud!",
@@ -70,30 +70,30 @@ function sendEmail() {
 }
 
 function checkInputs() {
-    const objektid = document.querySelectorAll('.objekt');
+    const items = document.querySelectorAll(".item");
 
-    for (const objekt of objektid) {
-        if (objekt.value == '') {
-            objekt.classList.add('error');
-            objekt.parentElement.classList.add('error');
+    for (const item of items) {
+        if (item.value == "") {
+            item.classList.add("error");
+            item.parentElement.classList.add("error");
         }
 
-        if (objektid[1].value != '') {
+        if (items[1].value != "") {
             checkEmail();
         }
 
-        objektid[1].addEventListener('keyup', () => {
+        items[1].addEventListener("keyup", () => {
             checkEmail();
         });
 
-        objekt.addEventListener('keyup', () => {
-            if (objekt.value != '') {
-                objekt.classList.remove('error');
-                objekt.parentElement.classList.remove('error');
+        item.addEventListener("keyup", () => {
+            if (item.value != "") {
+                item.classList.remove("error");
+                item.parentElement.classList.remove("error");
             }
             else {
-                objekt.classList.add('error');
-                objekt.parentElement.classList.add('error');
+                item.classList.add("error");
+                item.parentElement.classList.add("error");
             }
         });
     }
@@ -101,35 +101,34 @@ function checkInputs() {
 
 function checkEmail() {
     const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
-    const errorTxtEmail = document.querySelector('.error-txt.email');
+    const errorTxtEmail = document.querySelector(".error-txt.email");
 
-    if (!e_mail.value.match(emailRegex)) {
-        e_mail.classList.add('error');
-        e_mail.parentElement.classList.add('error');
+    if (!email.value.match(emailRegex)) {
+        email.classList.add("error");
+        email.parentElement.classList.add("error");
 
-        if (e_mail.value != '') {
-            errorTxtEmail.innertext = '*Sisesta sobiv e-posti aadress';
+        if (email.value != "") {
+            errorTxtEmail.innertext = "*Sisesta sobiv e-posti aadress";
         }
         else {
-            errorTxtEmail.innertext = '*E-posti aadressi lahter ei saa olla tühi';
+            errorTxtEmail.innertext = "*E-posti aadressi lahter ei saa olla tühi";
         }
     }
     else {
-        e_mail.classList.remove('error');
-        e_mail.parentElement.classList.remove('error');
+        email.classList.remove("error");
+        email.parentElement.classList.remove("error");
     }
 }
 
-vorm.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     checkInputs();
 
-    if (!nimi.classList.contains('error') && !e_mail.classList.contains('error') 
-    && !telefon.classList.contains('error') && !pealkiri.classList.contains('error') 
-    && !e_mail.classList.contains('error')) {
+    if (!fullName.classList.contains("error") && !email.classList.contains("error") 
+    && !phone.classList.contains("error") && !subject.classList.contains("error") 
+    && !mess.classList.contains("error")) {
         sendEmail();
-
-        vorm.reset();
+        form.reset();
         return false;
     }
 });

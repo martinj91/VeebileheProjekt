@@ -199,7 +199,7 @@ input[type=submit]:hover {
     margin-top: -5px;
 }
 
-.field.error .objekt {
+.field.error .item {
     border-color: #D93025;
 }
 
