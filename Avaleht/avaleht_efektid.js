@@ -81,7 +81,7 @@ function checkInputs() {
         if (items[1].value != "") {
             checkEmail();
         }
-
+        
         items[1].addEventListener("keyup", () => {
             checkEmail();
         });
@@ -101,17 +101,17 @@ function checkInputs() {
 
 function checkEmail() {
     const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
-    const errorTxtEmail = document.querySelector(".error-txt.email");
+    const errorTxtEmail = document.querySelector(".email");
 
     if (!email.value.match(emailRegex)) {
         email.classList.add("error");
         email.parentElement.classList.add("error");
 
         if (email.value != "") {
-            errorTxtEmail.innertext = "*Sisesta sobiv e-posti aadress";
+            errorTxtEmail.innerText = "*Sisesta sobiv e-posti aadress";
         }
         else {
-            errorTxtEmail.innertext = "*E-posti aadressi lahter ei saa olla tühi";
+            errorTxtEmail.innerText = "*E-posti aadressi lahter ei saa olla tühi";
         }
     }
     else {
