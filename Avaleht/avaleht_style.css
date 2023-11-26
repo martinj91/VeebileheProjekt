@@ -195,15 +195,15 @@ input[type=submit]:hover {
     color: #D93025;
     display: none;
 }
-.tekst-väli .error-txt {
+.textarea-field .error-txt {
     margin-top: -5px;
 }
 
-.väli.error .objekt {
+.field.error .objekt {
     border-color: #D93025;
 }
 
-.väli.error .error-txt {
+.field.error .error-txt {
     display: block;
 }
 

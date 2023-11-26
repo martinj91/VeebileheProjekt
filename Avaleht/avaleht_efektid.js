@@ -39,23 +39,23 @@ window.addEventListener('DOMContentLoaded', ()=>{
     })
 })
 
-const vorm = document.querySelector('form');
-const nimi =  document.getElementById('nimi');
+const form = document.querySelector('form');
+const name =  document.getElementById('name');
 const email = document.getElementById('email');
-const telefon = document.getElementById('number');
-const pealkiri = document.getElementById('teema');
-const teade =  document.getElementById('sõnum');
+const phone = document.getElementById('phone');
+const subject = document.getElementById('subject');
+const mess =  document.getElementById('message');
 
 function sendEmail() {
-    const bodyMessage = `Nimi: ${nimi.value}<br> E-mail: ${email.value}<br>
+    const bodyMessage = `Nimi: ${nimi.value}<br> E-mail: ${e_mail.value}<br>
     Telefon: ${telefon.value}<br> Sõnum: ${teade.value}`;
 
     Email.send({
         SecureToken: 'a270c788-ea75-48bf-b41c-08a6788cb77d',
-        To : 'sandersirge@gmail.com',
-        From : "projekt.kontaktivorm@gmail.com",
-        Subject : pealkiri.value,
-        Body : bodyMessage
+        To: 'sandersirge@gmail.com',
+        From: "projekt.kontaktivorm@gmail.com",
+        Subject: pealkiri.value,
+        Body: bodyMessage
     }).then(
         message => {
             if (message == 'OK') {
@@ -103,20 +103,20 @@ function checkEmail() {
     const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
     const errorTxtEmail = document.querySelector('.error-txt.email');
 
-    if (!email.value.match(emailRegex)) {
-        email.classList.add('error');
-        email.parentElement.classList.add('error');
+    if (!e_mail.value.match(emailRegex)) {
+        e_mail.classList.add('error');
+        e_mail.parentElement.classList.add('error');
 
-        if (email.value != '') {
+        if (e_mail.value != '') {
             errorTxtEmail.innertext = '*Sisesta sobiv e-posti aadress';
         }
         else {
-            errorTxtEmail.innertext = '*See on kohustuslik väli';
+            errorTxtEmail.innertext = '*E-posti aadressi lahter ei saa olla tühi';
         }
     }
     else {
-        email.classList.remove('error');
-        email.parentElement.classList.remove('error');
+        e_mail.classList.remove('error');
+        e_mail.parentElement.classList.remove('error');
     }
 }
 
@@ -124,9 +124,9 @@ vorm.addEventListener('submit', (e) => {
     e.preventDefault();
     checkInputs();
 
-    if (!nimi.classList.contains('error') && !email.classList.contains('error') 
+    if (!nimi.classList.contains('error') && !e_mail.classList.contains('error') 
     && !telefon.classList.contains('error') && !pealkiri.classList.contains('error') 
-    && !email.classList.contains('error')) {
+    && !e_mail.classList.contains('error')) {
         sendEmail();
 
         vorm.reset();
