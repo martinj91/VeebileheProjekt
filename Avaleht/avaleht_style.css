@@ -3,6 +3,38 @@
     --primary-color: #007AF3;
 }
 
+.scrollToTopBtn {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #E62739;
+    background: #FFFFFF;
+    color: #E62739;
+    outline: none;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.2s ease;
+}
+  
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scrollToTopBtn:hover {
+    background: #E62739;
+    color: #FFFFFF;
+}
+
+.scrollToTopBtn:active {
+    background: #CC2333;
+}
+
 body {
     background: #F2F2F2;
     margin: 0;
