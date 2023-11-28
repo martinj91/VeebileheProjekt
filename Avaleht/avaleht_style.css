@@ -100,7 +100,7 @@ ul {
     padding: 0;
 }
 
-section {
+div.sektsioon {
     padding: 5em 2em;
 }
 
@@ -171,7 +171,7 @@ section {
     margin-top: 3em;
 }
 
-section.detailid-sektsioon {
+div.detailid-sektsioon {
     background: #20272e;
     color: white;
 }
@@ -331,13 +331,15 @@ nav li a {
         );
         background-size: 200% 100%;
         background-position: -100%;
-        display: inline-block;
+        display: left;
+        text-align: center;
         padding: 5px 0;
+        margin-bottom: 25px;
         position: relative;
         -webkit-background-clip: text;
                 background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
       
     a.little-menu:before {
@@ -349,7 +351,7 @@ nav li a {
         left: 0;
         width: 0;
         height: 3px;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
       
     a.little-menu:hover {
@@ -357,7 +359,7 @@ nav li a {
     }
       
     a.little-menu:hover::before {
-        width:100%;
+        width: 100%;
     }
 }
 
@@ -403,7 +405,7 @@ nav li a {
         -webkit-background-clip: text;
                 background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
       
     a.animatsioon:before {
@@ -415,7 +417,7 @@ nav li a {
         left: 0;
         width: 0;
         height: 3px;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
       
     a.animatsioon:hover {
@@ -457,7 +459,7 @@ nav li a {
         width: 1080px;
         margin: 0 auto;
     }
-    section {
+    div.sektsioon {
         padding: 10em 4em;
     }
     .avakuva .kast {

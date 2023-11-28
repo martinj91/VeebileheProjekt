@@ -13,9 +13,9 @@
     </button>
 
     <div class="intro">
-        <h1 class="logo-päis">
+        <h2 class="logo-päis">
             <span class="logo-intro">Hoia</span><span id="sinine" class="logo-intro">Meeles</span>
-        </h1>
+        </h2>
     </div>
 
     <div class="navbar">
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <section class="avakuva">
+    <div class="avakuva sektsioon">
         <div class="kast">
             <div class="vasak-tulp">
                 <p class="alapealkiri">See On Parim &amp; Kiireim Rakendus</p>
@@ -55,9 +55,9 @@
 
             <img src="/Pildid_avaleht/illustration.svg" class="avakuva-pilt" alt="Illustratsioon">
         </div>
-    </section>
+    </div>
 
-    <section class="detailid-sektsioon">
+    <div class="detailid-sektsioon sektsioon">
         <div class="kast">
             <ul class="detailid-loetelu">
                 <li>Lõpmatult Palju Ülesandeid</li>
@@ -70,9 +70,9 @@
 
             <img src="/Pildid_avaleht/telefoni_hoidmine.jpg" alt="Inimene hoiab telefoni">
         </div>
-    </section>
+    </div>
 
-    <section class="kommentaaride-sektsioon">
+    <div class="kommentaaride-sektsioon sektsioon">
         <div class="kast">
             <ul>
                 <li>
@@ -95,16 +95,16 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <section class="kontakti-sektsioon" id="kontakt-sektsioon">
+    <div class="kontakti-sektsioon sektsioon" id="kontakt-sektsioon">
         <div class="kast">
             <div class="kontakt-vasak">
                 <h2>Kontakteeru meiega</h2>
 
                 <form action="#">
                     <div class="input-box">
-                        <label for="name">Nimi</label>
+                        <label for="fullName">Nimi</label>
                         <div class="input-field field">
                             <input type="text" id="fullName" class="item" name="nimi" autocomplete="off" placeholder="Sinu täisnimi">
                             <div class="error-txt">*Nime lahter ei saa olla tühi</div>
@@ -118,13 +118,13 @@
                     </div>
 
                     <div class="input-box">
-                        <label for="number">Telefoninumber</label>
+                        <label for="phone">Telefoninumber</label>
                         <div class="input-field field">
                             <input type="text" id="phone" class="item" name="number" autocomplete="off" placeholder="Sinu telefoninumber">
                             <div class="error-txt">*Telefoninumbri lahter ei saa olla tühi</div>
                         </div>
 
-                        <label for="teema">Teema</label>
+                        <label for="subject">Teema</label>
                         <div class="input-field field">
                             <input type="text" id="subject" class="item" name="teema" autocomplete="off" placeholder="Mis teemat sõnum puudutab?">
                             <div class="error-txt">*Teema lahter ei saa olla tühi</div>
@@ -132,7 +132,7 @@
                     </div>
 
                     <div class="textarea-field field">
-                        <label for="sõnum">Teie sõnum</label>
+                        <label for="message">Teie sõnum</label>
                         <textarea name="message" id="message" class="item" cols="30" rows="10" autocomplete="off" placeholder="Sisesta oma sõnum siia..."></textarea>
                         <div class="error-txt">*Sõnumi lahter ei saa olla tühi</div>
                     </div>
@@ -142,10 +142,10 @@
             </div>
 
             <div class="kontakt-parem">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133815.57475331452!2d26.627516049999997!3d58.395619749999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36d8d5671d25%3A0x6b0977cc00630ff6!2sTartu%20linn%2C%20Tartu%20maakond!5e0!3m2!1set!2see!4v1689176679498!5m2!1set!2see" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133815.57475331452!2d26.627516049999997!3d58.395619749999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36d8d5671d25%3A0x6b0977cc00630ff6!2sTartu%20linn%2C%20Tartu%20maakond!5e0!3m2!1set!2see!4v1689176679498!5m2!1set!2see" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-    </section>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/Avaleht/avaleht_efektid.js"></script>
