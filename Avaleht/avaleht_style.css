@@ -247,13 +247,14 @@ textarea {
     resize: none;
 }
 button[type=submit] {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: white;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1.3em;
     border: none;
     margin-top: 0.5em;
     margin-bottom: 5em;
+    border: 3px solid var(--primary-color);
     border-radius: 5em;
     display: inline-block;
     padding: 0.8em 2em;
@@ -262,7 +263,8 @@ button[type=submit] {
     transition: 0.2s;
 }
 button[type=submit]:hover {
-    box-shadow: 0 0 10px var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .error-txt {
