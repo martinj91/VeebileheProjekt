@@ -109,6 +109,7 @@ div.sektsioon {
 }
 
 .avakuva-cta img {
+    opacity: 0;
     height: 40px;
 }
 
@@ -488,6 +489,7 @@ nav li a {
     .avakuva-cta img {
         padding-top: 1.6em;
         margin-left: 0.5em;
+        opacity: 1;
     }
 
     ul.detailid-loetelu {
