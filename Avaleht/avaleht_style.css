@@ -16,12 +16,34 @@ body {
 .navbar .logo {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: inherit;
     font-size: 1.2em;
+    background:
+        linear-gradient(
+            to right,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 1)
+        ),
+        linear-gradient(
+            to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1)
+        );
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: 400ms;
 }
+
+.navbar .logo:hover {
+    background-size: 0 3px, 65% 3px;
+}
+
 .navbar .logo span {
     color: var(--primary-color);
 }
+
 .navbar nav {
     display: none;
 }
@@ -54,6 +76,10 @@ section {
     text-align: center;
 }
 
+.avakuva-cta img {
+    height: 40px;
+}
+
 .vasak-tulp .alapealkiri {
     text-transform: uppercase;
     font-weight: bold;
@@ -75,7 +101,7 @@ section {
     border-radius: 5em;
     font-weight: bold;
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .vasak-tulp .peamine-cta:hover {
@@ -84,12 +110,24 @@ section {
 }
 
 .vasak-tulp .vaata-video-cta {
-    display: block;
+    display: flex;
     text-decoration: none;
-    margin-top: 1em;
+    max-width: fit-content;
+    margin-left: 0em;
+    margin-top: 0.9em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border: 3px solid rgb(219, 143, 0);
+    border-radius: 5em;
+    font-weight: bold;
+    color: rgb(219, 143, 0);
+    transition: 0.2s;
 }
 .vasak-tulp .vaata-video-cta:hover {
-    font-weight: bold;
+    background-color: rgb(219, 143, 0);
+    color: white;
 }
 .vasak-tulp .vaata-video-cta img {
     margin-right: 0.5em;
@@ -189,7 +227,7 @@ button[type=submit] {
     padding: 0.8em 2em;
     width: unset;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 button[type=submit]:hover {
     box-shadow: 0 0 10px var(--primary-color);
@@ -234,15 +272,12 @@ nav ul.peamine-nav {
     margin-top: 5em;
 }
 nav li a {
-    color: black;
+    color: white;
     text-decoration: none;
     display: block;
     padding: 0.5em;
     font-size: 1.3em;
     text-align: right;
-}
-nav li a:hover {
-    font-weight: bold;
 }
 
 .mobiil-menüü-välju {
@@ -250,6 +285,45 @@ nav li a:hover {
     float: right;
     margin: 0.5em;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    a.little-menu {
+        background-image: linear-gradient(
+          to right,
+          var(--primary-color),
+          var(--primary-color) 50%,
+          white 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+      
+    a.little-menu:before {
+        content: '';
+        background: var(--primary-color);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+      
+    a.little-menu:hover {
+       background-position: 0;
+    }
+      
+    a.little-menu:hover::before {
+        width:100%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -278,11 +352,46 @@ nav li a:hover {
         font-size: 1em;
         padding: 0.1em 1em;
     }
+
+    a.animatsioon {
+        background-image: linear-gradient(
+          to right,
+          var(--primary-color),
+          var(--primary-color) 50%,
+          #000 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+      
+    a.animatsioon:before {
+        content: '';
+        background: var(--primary-color);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+      
+    a.animatsioon:hover {
+       background-position: 0;
+    }
+      
+    a.animatsioon:hover::before {
+        width:100%;
+    }
+
     .navbar nav ul.peamine-nav {
         margin: 0;
-    }
-    .navbar nav li.hetkene a {
-        font-weight: bold;
     }
     .navbar nav li.premium-cta a {
         color: var(--primary-color);
@@ -290,11 +399,21 @@ nav li a:hover {
         font-weight: bold;
         border-radius: 5em;
         margin-top: -0.2em;
-        transition: 0.5s;
+        transition: 0.2s;
     }
     .navbar nav li.premium-cta a:hover {
         background-color: var(--primary-color);
         color: white;
+    }
+
+    .avakuva-cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .avakuva-cta img {
+        margin-left: 0;
     }
 }
 @media only screen and (min-width: 1080px) {
@@ -327,26 +446,9 @@ nav li a:hover {
     .peamine-cta {
         margin-right: 1em;
     }
-    .vaata-video-cta {
-        padding-top: 0.6em;
-        padding-right: 1em;
-        padding-left: 1em;
-        border: 3px solid rgb(219, 143, 0);
-        border-radius: 5em;
-        font-weight: bold;
-        color: rgb(219, 143, 0);
-        transition: 0.5s;
-    }
-
-    .vaata-video-cta:hover {
-        background-color: rgb(219, 143, 0);
-        color: white;
-    }
 
     .avakuva-cta img {
-        padding-top: 0.2em;
-        height: 40px;
-        padding-top: 1.4em;
+        padding-top: 1.6em;
         margin-left: 0.5em;
     }
 

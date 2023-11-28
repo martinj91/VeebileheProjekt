@@ -22,14 +22,14 @@
             <nav>
                 <img id="mobiil-välju" class="mobiil-menüü-välju" src="/Pildid_avaleht/exit.png" alt="Sule menüü">
                 <ul class="peamine-nav">
-                    <li class="hetkene"><a href="avaleht.html">Avaleht</a></li>
-                    <li><a href="#">Hinnakiri</a></li>
-                    <li><a href="#">Detailid</a></li>
+                    <li><a class="animatsioon little-menu" href="avaleht.html">Avaleht</a></li>
+                    <li><a class="animatsioon little-menu" href="#">Hinnakiri</a></li>
+                    <li><a class="animatsioon little-menu" href="#">Detailid</a></li>
                 </ul>
 
                 <ul class="sekundaarne-nav">
-                    <li><a href="#">Kontakt</a></li>
-                    <li class="premium-cta"><a href="#">Osta Premium</a></li>
+                    <li><a class="animatsioon little-menu" onclick="document.getElementById('kontakt-sektsioon').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });">Kontakt</a></li>
+                    <li class="premium-cta"><a class="little-menu" href="#">Osta Premium</a></li>
                 </ul>
             </nav>
         </div>
@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <section class="kontakti-sektsioon">
+    <section class="kontakti-sektsioon" id="kontakt-sektsioon">
         <div class="kast">
             <div class="kontakt-vasak">
                 <h2>Kontakteeru meiega</h2>
