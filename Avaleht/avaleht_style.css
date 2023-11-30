@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root {
+    --primary-color: #007AF3;
+}
+
+.scrollToTopBtn {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #E62739;
+    background: #FFFFFF;
+    color: #E62739;
+    outline: none;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.2s ease;
+}
+  
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scrollToTopBtn:hover {
+    background: #E62739;
+    color: #FFFFFF;
+}
+
+.scrollToTopBtn:active {
+    background: #CC2333;
+}
+
+body {
+    background: #F2F2F2;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.navbar {
+    background: white;
+    padding: 1em;
+}
+.navbar .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+    font-size: 1.2em;
+    background:
+        linear-gradient(
+            to right,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 1)
+        ),
+        linear-gradient(
+            to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1)
+        );
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: 400ms;
+}
+
+.navbar .logo:hover {
+    background-size: 0 3px, 65% 3px;
+}
+
+.navbar .logo span {
+    color: var(--primary-color);
+}
+
+.navbar nav {
+    display: none;
+}
+.navbar .kast {
+    display: flex;
+    place-content: space-between;
+}
+.navbar .mobiil-menüü {
+    cursor: pointer;
+    width: 2.5em;
+    height: 2em;
+    padding: 0;
+}
+
+a {
+    color: #444444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.sektsioon {
+    padding: 5em 2em;
+}
+
+.avakuva {
+    text-align: center;
+}
+
+.avakuva-cta img {
+    opacity: 0;
+    height: 40px;
+}
+
+.vasak-tulp .alapealkiri {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 0.3em;
+}
+.vasak-tulp h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: 0.2em;
+}
+.vasak-tulp .peamine-cta {
+    background-color: #F2F2F2;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    text-decoration: none;
+    padding: 0.6em 1.3em;
+    font-size: 1.4em;
+    border-radius: 5em;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.vasak-tulp .peamine-cta:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.vasak-tulp .vaata-video-cta {
+    display: flex;
+    text-decoration: none;
+    max-width: fit-content;
+    margin-left: 0em;
+    margin-top: 0.9em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border: 3px solid rgb(219, 143, 0);
+    border-radius: 5em;
+    font-weight: bold;
+    color: rgb(219, 143, 0);
+    transition: 0.2s;
+}
+.vasak-tulp .vaata-video-cta:hover {
+    background-color: rgb(219, 143, 0);
+    color: white;
+}
+.vasak-tulp .vaata-video-cta img {
+    margin-right: 0.5em;
+    width: 1.2em;
+}
+
+.avakuva-pilt {
+    width: 20em;
+    margin-top: 3em;
+}
+
+div.detailid-sektsioon {
+    background: #20272e;
+    color: white;
+}
+
+ul.detailid-loetelu {
+    margin: 0;
+    padding-left: 0.1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+ul.detailid-loetelu li {
+    font-size: 0.9em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    position: relative;
+}
+ul.detailid-loetelu li:before {
+    content: "";
+    left: -2em;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../Pildid_avaleht/bullet.svg");
+    background-size: 1.4em;
+    margin-right: 0.5em;
+}
+
+.detailid-sektsioon img {
+    display: none;
+}
+
+.kommentaaride-sektsioon {
+    background: var(--primary-color);
+    color: white;
+}
+.kommentaaride-sektsioon li {
+    background-color: #006BD6;
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+}
+.kommentaaride-sektsioon li img {
+    width: 5em;
+    height: 5em;
+    border: 5px solid #006BD6;
+    border-radius: 50%;
+    margin-top: -4.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 0.3em;
+    margin-bottom: 10px;
+    font-family: "Poppins";
+    border: 1px solid var(--primary-color);
+    outline: none;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+}
+button[type=submit] {
+    background-color: white;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-top: 0.5em;
+    margin-bottom: 5em;
+    border: 3px solid var(--primary-color);
+    border-radius: 5em;
+    display: inline-block;
+    padding: 0.8em 2em;
+    width: unset;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button[type=submit]:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.error-txt {
+    margin: 3px 0 10px;
+    font-size: 14.5px;
+    color: #D93025;
+    display: none;
+}
+.textarea-field .error-txt {
+    margin-top: -5px;
+}
+.field.error .item {
+    border-color: #D93025;
+}
+.field.error .error-txt {
+    display: block;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 40%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+}
+nav ul.peamine-nav {
+    margin-top: 5em;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: right;
+}
+
+.mobiil-menüü-välju {
+    height: 40px;
+    float: right;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    a.little-menu {
+        background-image: linear-gradient(
+          to right,
+          var(--primary-color),
+          var(--primary-color) 50%,
+          white 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: left;
+        text-align: center;
+        padding: 5px 0;
+        margin-bottom: 25px;
+        position: relative;
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.2s ease-in-out;
+    }
+      
+    a.little-menu:before {
+        content: '';
+        background: var(--primary-color);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.2s ease-in-out;
+    }
+      
+    a.little-menu:hover {
+       background-position: 0;
+    }
+      
+    a.little-menu:hover::before {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .mobiil-menüü, .mobiil-menüü-välju {
+        display: none;
+    }
+    .navbar .kast {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+    .navbar nav ul {
+        display: flex;
+    }
+    .navbar nav a {
+        color: black;
+        font-size: 1em;
+        padding: 0.1em 1em;
+    }
+
+    a.animatsioon {
+        background-image: linear-gradient(
+          to right,
+          var(--primary-color),
+          var(--primary-color) 50%,
+          #000 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.2s ease-in-out;
+    }
+      
+    a.animatsioon:before {
+        content: '';
+        background: var(--primary-color);
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.2s ease-in-out;
+    }
+      
+    a.animatsioon:hover {
+       background-position: 0;
+    }
+      
+    a.animatsioon:hover::before {
+        width:100%;
+    }
+
+    .navbar nav ul.peamine-nav {
+        margin: 0;
+    }
+    .navbar nav li.premium-cta a {
+        color: var(--primary-color);
+        border: 3px solid var(--primary-color);
+        font-weight: bold;
+        border-radius: 5em;
+        margin-top: -0.2em;
+        transition: 0.2s;
+    }
+    .navbar nav li.premium-cta a:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .avakuva-cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .avakuva-cta img {
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .kast {
+        width: 1080px;
+        margin: 0 auto;
+    }
+    div.sektsioon {
+        padding: 10em 4em;
+    }
+    .avakuva .kast {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .avakuva .kast .vasak-tulp {
+        margin: 3em 3em 0 5em;
+    }
+    .avakuva .kast .vasak-tulp h1 {
+        font-size: 3em;
+        width: 90%;
+    }
+    .avakuva-pilt {
+        width: 30%;
+        margin-right: 8em;
+    }
+    .avakuva-cta {
+        display: flex;
+    }
+    .peamine-cta {
+        margin-right: 1em;
+    }
+
+    .avakuva-cta img {
+        padding-top: 1.6em;
+        margin-left: 0.5em;
+        opacity: 1;
+    }
+
+    ul.detailid-loetelu {
+        display: block;
+        margin-left: 5em;
+    }
+    ul.detailid-loetelu li {
+        font-size: 1.4em;
+    }
+    ul.detailid-loetelu li:before {
+        width: 30px;
+        height: 30px;
+    }
+    .detailid-sektsioon {
+        position: relative;
+    }
+    .detailid-sektsioon img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        bottom: -2em;
+    }
+    .kommentaaride-sektsioon ul {
+        display: flex;
+    }
+    .kommentaaride-sektsioon ul li {
+        margin: 0 1em;
+    }
+    .kontakti-sektsioon {
+        position: relative;
+    }
+    .kontakti-sektsioon .kast {
+        display: flex;
+    }
+    .kontakt-parem {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+    }
+    .kontakt-parem iframe {
+        height: 100%;
+    }
+}
+@media only screen and (min-width: 1450px) {
+    .detailid-sektsioon:before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 20em;
+        background: var(--primary-color);
+        left: 0;
+        top: -4em;
+    }
+    .detailid-sektsioon:after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 20em;
+        background: url("../Pildid_avaleht/punktid.png");
+        left: 4.5em;
+        top: 2em;
+    }
+}
+
+.intro {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #20272E;
+    transition: 1s;
+}
+
+.logo-päis {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.logo-intro {
+    font-size: 4rem;
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+#sinine {
+    color: var(--primary-color);
+}
+
+.logo-intro.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo-intro.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
