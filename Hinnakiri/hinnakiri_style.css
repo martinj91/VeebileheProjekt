@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;600&display=swap');
+body {
+    margin: 20px;
+}
+
+h1{
+    color: #1a1919;
+    font-size: 68px;
+    word-spacing: 16px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h1 span {
+    color: var(--primary-color)
+}
+.motivation {
+    font-size: 48px;
+    color:#535353;
+    flex: 1 0 300px;
+    text-align: center;
+    opacity: 60%;
+    overflow: visible;
+    white-space: nowrap;
+    position:relative;
+}
+.plan {
+    font-weight: bold;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1px 50px 50px 50px;
+}
+
+.pricing-plan {
+    flex:1 0 300px;
+    background-color: #ffffff;
+    padding: 10px 50px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.4s ease;
+    margin-bottom: 20px;
+    margin-inline: 10px;
+}
+
+.pricing-plan:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-plan h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+}
+
+.price {
+    color: #000000;
+    font-family: 'Comfortaa'; 
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.pricing-plan button {
+    color: #007AF3;
+    border: 3px solid #007AF3;
+    background-color: #ffffff;
+    font-size: 22px;
+    font-family: "Poppins";
+    font-weight:600;
+    letter-spacing: 1px;
+    padding: 7px 50px;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 25px;
+}
+
+.pricing-plan span{
+    font-size: 14px;
+
+}
+.pricing-plan button:hover {
+    background-color: var(--primary-color);
+    color: #ffffff
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding-left: 5px;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: hsl(39, 98%, 53%);
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: hsl(39, 100%, 40%);
+    transition: color 0.4s ease;
+}
+
+
+ul li::before {
+    content: url('images/checkmark.png');
+    position: absolute;
+    transform: translateY(-25%) translateX(-200%)scale(0.1);
+    width: 20px;
+    height: 25px;
+
+}
+.about a{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+.about a:hover {
+    text-decoration: underline;
+    
+}
+a {
+    text-decoration: none;
+}
+
+.contact {
+    margin-left: 60px;
+    font-size: 24px;
+
+}
+.contact a{
+    color:#007AF3;
+}
+
+.contact a:hover {
+    color:#000000;
+    transition: color 0.4s ease;
+    text-decoration: underline;
+}
