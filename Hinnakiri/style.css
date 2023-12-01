@@ -1,10 +1,16 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    margin: 20px;
+    font-family:Arial, sans-serif;
+    margin: 10px;
+    padding: 5px;
+    background-color: #da9999;
 }
 
 h1, h2 {
-    color: #000000;
+    color: #2b2b2b;
+}
+
+h1 {
+    text-align: center;
 }
 
 table {
@@ -26,4 +32,87 @@ th {
 
 .plan {
     font-weight: bold;    
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 2%;
+    justify-content:space-around;
+}
+
+.pricing-plan {
+    flex: 0.22;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.4s ease; 
+}
+
+.pricing-plan:hover {
+    box-shadow: 0 0 20px rgba(226, 235, 94, 1);
+}
+
+.pricing-plan h2 {
+    color: #dd2525;
+}
+
+.price {
+    color: #000000;
+    font-family: 'Courier New', sans-serif, monospace; 
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: -10%;
+}
+.pricesmall {
+    font-size: 12px;
+    text-align: left;
+}
+
+.pricing-plan button {
+    background-color: #0088cc;
+    color: #ffffff;
+    margin: auto;
+    padding: 3% 25%;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #005580;
+}
+
+ul {
+    list-style: none;
+    padding: 3%;
+}
+
+ul li {
+    position: relative;
+    padding-left: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #005580;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+ul li::before {
+    content: url('images/checkmark.png');
+    position: absolute;
+    left: 10%;
+    top: -5%;
+    transform: translateY(-50%) scale(0.075);
+    width: 1px;
+    height: 1px;
 }
