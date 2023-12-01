@@ -9,6 +9,8 @@ h1{
     word-spacing: 16px;
     text-align: center;
     margin-bottom: 80px;
+    overflow: visible;
+    white-space: nowrap;
 }
 
 h1 span {
