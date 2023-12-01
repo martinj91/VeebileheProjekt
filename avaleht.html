@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTD rakendus</title>
+    <link rel="stylesheet" href="/Avaleht/avaleht_style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <button class="scrollToTopBtn">
+            <i class="material-icons">arrow_upward</i>
+        </button>
+
+        <div class="intro">
+            <h2 class="logo-päis">
+                <span class="logo-intro">Hoia</span><span id="sinine" class="logo-intro">Meeles</span>
+            </h2>
+        </div>
+
+        <div class="navbar">
+            <div class="kast">
+                <a class="logo" href="avaleht.html">Hoia<span>Meeles</span></a>
+
+                <img id="mobiil-cta" class="mobiil-menüü" src="/Pildid_avaleht/menu.svg" alt="Ava menüü">
+
+                <nav>
+                    <img id="mobiil-välju" class="mobiil-menüü-välju" src="/Pildid_avaleht/exit.png" alt="Sule menüü">
+                    <ul class="peamine-nav">
+                        <li><a class="animatsioon little-menu" href="avaleht.html">Avaleht</a></li>
+                        <li><a class="animatsioon little-menu" href="Hinnakiri/hinnakiri.html">Hinnakiri</a></li>
+                        <li><a class="animatsioon little-menu" href="#">Detailid</a></li>
+                    </ul>
+
+                    <ul class="sekundaarne-nav">
+                        <li><a class="animatsioon little-menu" onclick="document.getElementById('kontakt-sektsioon').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });">Kontakt</a></li>
+                        <li class="premium-cta"><a class="little-menu" href="#">Osta Premium</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="avakuva sektsioon">
+            <div class="kast">
+                <div class="vasak-tulp">
+                    <p class="alapealkiri">See On Parim &amp; Kiireim Rakendus</p>
+                    <h1>Õpi Nagu Professionaal Kasutama GTD Meetodit</h1>
+
+                    <div class="avakuva-cta">
+                        <a href="#" class="peamine-cta">Proovi tasuta</a>
+                        <a href="#" class="vaata-video-cta">Vaata videot</a>
+                        <img src="/Pildid_avaleht/video.svg" alt="Vaata videot">
+                    </div>
+                </div>
+
+                <img src="/Pildid_avaleht/illustration.svg" class="avakuva-pilt" alt="Illustratsioon">
+            </div>
+        </div>
+
+        <div class="detailid-sektsioon sektsioon">
+            <div class="kast">
+                <ul class="detailid-loetelu">
+                    <li>Lõpmatult Palju Ülesandeid</li>
+                    <li>SMS Meeldetuletused</li>
+                    <li>Lahedad Efektid Ülesannete Sooritamisel</li>
+                    <li>Sotsiaalmeedia Integratsioon</li>
+                    <li>Reaalajas Koostöö Võimalus</li>
+                    <li>Ja Palju Muud Lahedat...</li>
+                </ul>
+
+                <img src="/Pildid_avaleht/telefoni_hoidmine.jpg" alt="Inimene hoiab telefoni">
+            </div>
+        </div>
+
+        <div class="kommentaaride-sektsioon sektsioon">
+            <div class="kast">
+                <ul>
+                    <li>
+                        <img src="/Pildid_avaleht/inimene3.jpg" alt="Inimene1">
+
+                        <blockquote>"Suurepärane rakendus. Siiamaani on väga hästi aidanud."</blockquote>
+                        <cite>- Alex Suprun</cite>
+                    </li>
+                    <li>
+                        <img src="/Pildid_avaleht/inimene2.jpg" alt="Inimene2">
+
+                        <blockquote>"Eriti mugav ja lihtne kasutada."</blockquote>
+                        <cite>- Timothy Barlin</cite>
+                    </li>
+                    <li>
+                        <img src="/Pildid_avaleht/inimene1.jpg" alt="Inimene3">
+
+                        <blockquote>"Imeline kasutajaliides, mis lausa kutsub kasutama. Senimaani pole midagi enam unustanud."</blockquote>
+                        <cite>- Thom Holmes</cite>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="kontakti-sektsioon sektsioon" id="kontakt-sektsioon">
+            <div class="kast">
+                <div class="kontakt-vasak">
+                    <h2>Kontakteeru meiega</h2>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <label for="fullName">Nimi</label>
+                            <div class="input-field field">
+                                <input type="text" id="fullName" class="item" name="nimi" autocomplete="off" placeholder="Sinu täisnimi">
+                                <div class="error-txt">*Nime lahter ei saa olla tühi</div>
+                            </div>
+
+                            <label for="email">E-mail</label>
+                            <div class="input-field field">
+                                <input type="text" id="email" class="item" name="email" autocomplete="off" placeholder="Sinu e-mail">
+                                <div class="error-txt email">*E-posti aadressi lahter ei saa olla tühi</div>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="phone">Telefoninumber</label>
+                            <div class="input-field field">
+                                <input type="text" id="phone" class="item" name="number" autocomplete="off" placeholder="Sinu telefoninumber">
+                                <div class="error-txt">*Telefoninumbri lahter ei saa olla tühi</div>
+                            </div>
+
+                            <label for="subject">Teema</label>
+                            <div class="input-field field">
+                                <input type="text" id="subject" class="item" name="teema" autocomplete="off" placeholder="Mis teemat sõnum puudutab?">
+                                <div class="error-txt">*Teema lahter ei saa olla tühi</div>
+                            </div>
+                        </div>
+
+                        <div class="textarea-field field">
+                            <label for="message">Teie sõnum</label>
+                            <textarea name="message" id="message" class="item" cols="30" rows="10" autocomplete="off" placeholder="Sisesta oma sõnum siia..."></textarea>
+                            <div class="error-txt">*Sõnumi lahter ei saa olla tühi</div>
+                        </div>
+
+                        <button type="submit">Saada sõnum</button>
+                    </form>
+                </div>
+
+                <div class="kontakt-parem">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d133815.57475331452!2d26.627516049999997!3d58.395619749999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eb36d8d5671d25%3A0x6b0977cc00630ff6!2sTartu%20linn%2C%20Tartu%20maakond!5e0!3m2!1set!2see!4v1689176679498!5m2!1set!2see" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="/Avaleht/avaleht_efektid.js"></script>
+    </main>
+</body>
+</html>
