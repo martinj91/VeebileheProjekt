@@ -1,13 +1,16 @@
-const mobileBtn = document.getElementById('mobiil-cta')
-    nav = document.querySelector('nav')
-    mobileBtnExit = document.getElementById('mobiil-välju');
+const mobileBtn = document.getElementById('mobiil-cta');
+var nav = document.querySelector('nav');
+var sisu = document.querySelector("body")
+const mobileBtnExit = document.getElementById('mobiil-välju');
 
 mobileBtn.addEventListener('click', () => {
-    nav.classList.add('menu-btn');
+    nav.style.right = '0';
+    sisu.style.marginRight = '250px';
 })
 
 mobileBtnExit.addEventListener('click', () => {
-    nav.classList.remove('menu-btn');
+    nav.style.right = '-250px';
+    sisu.style.marginRight = '0';
 })
 
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");

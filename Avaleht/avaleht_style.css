@@ -39,6 +39,7 @@ body {
     background: #F2F2F2;
     margin: 0;
     font-family: "Poppins";
+    transition: margin-right 0.4s ease-in-out;
 }
 
 .navbar {
@@ -287,17 +288,16 @@ iframe {
 
 nav.menu-btn {
     display: block;
-}
-
-nav {
     position: fixed;
     z-index: 999;
-    width: 40%;
-    right: 0;
+    width: 218px;
+    right: -250px;
     top: 0;
     background: #20272E;
     height: 100vh;
     padding: 1em;
+    transition: right 0.4s ease-in-out;
+    cursor: pointer
 }
 nav ul.peamine-nav {
     margin-top: 5em;
