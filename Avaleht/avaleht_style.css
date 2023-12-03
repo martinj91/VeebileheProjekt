@@ -297,7 +297,6 @@ nav.menu-btn {
     height: 100vh;
     padding: 1em;
     transition: right 0.4s ease-in-out;
-    cursor: pointer
 }
 nav ul.peamine-nav {
     margin-top: 5em;
@@ -422,6 +421,7 @@ nav li a {
       
     a.animatsioon:hover {
        background-position: 0;
+       cursor: pointer;
     }
       
     a.animatsioon:hover::before {
