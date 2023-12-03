@@ -45,6 +45,7 @@ body {
     background: white;
     padding: 1em;
 }
+
 .navbar .logo {
     text-decoration: none;
     font-weight: bold;
@@ -66,12 +67,7 @@ body {
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: 400ms;
-}
-
-.navbar .logo:hover {
-    background-size: 0 3px, 65% 3px;
-}
-
+} 
 .navbar .logo span {
     color: var(--primary-color);
 }
@@ -361,7 +357,7 @@ nav li a {
       
     a.little-menu:hover::before {
         width: 100%;
-    }
+    }   
 }
 
 @media only screen and (min-width: 768px) {
@@ -372,6 +368,9 @@ nav li a {
         display: grid;
         grid-template-columns: 180px auto;
         justify-content: unset;
+    }
+    .navbar .logo:hover {
+        background-size: 0 3px, 65% 3px;
     }
     .navbar nav {
         display: flex;
