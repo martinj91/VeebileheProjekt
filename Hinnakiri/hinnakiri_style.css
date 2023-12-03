@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;600&display=swap');
-body {
-    margin: 20px;
-}
+
 
 h1{
     color: #1a1919;
@@ -9,8 +7,6 @@ h1{
     word-spacing: 16px;
     text-align: center;
     margin-bottom: 80px;
-    overflow: visible;
-    white-space: nowrap;
 }
 
 h1 span {
@@ -40,6 +36,7 @@ h1 span {
 .pricing-plan {
     flex:1 0 300px;
     background-color: #ffffff;
+    border-radius: 1em;
     padding: 10px 50px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -90,31 +87,31 @@ h1 span {
     color: #ffffff
 }
 
-ul {
+.pricing-plan ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-ul li {
+.pricing-plan ul li {
     padding-left: 5px;
     margin-bottom: 12px;
     font-size: 22px;
 }
 
-ul li a {
+.pricing-plan ul li a {
     text-decoration: none;
     color: hsl(39, 98%, 53%);
 }
 
-ul li a:hover {
+.pricing-plan ul li a:hover {
     text-decoration: underline;
     color: hsl(39, 100%, 40%);
     transition: color 0.4s ease;
 }
 
 
-ul li::before {
+.pricing-plan ul li::before {
     content: url('images/checkmark.png');
     position: absolute;
     transform: translateY(-25%) translateX(-200%)scale(0.1);
