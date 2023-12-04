@@ -39,12 +39,14 @@ body {
     background: #F2F2F2;
     margin: 0;
     font-family: "Poppins";
+    transition: margin-right 0.4s ease-in-out;
 }
 
 .navbar {
     background: white;
     padding: 1em;
 }
+
 .navbar .logo {
     text-decoration: none;
     font-weight: bold;
@@ -66,12 +68,7 @@ body {
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: 400ms;
-}
-
-.navbar .logo:hover {
-    background-size: 0 3px, 65% 3px;
-}
-
+} 
 .navbar .logo span {
     color: var(--primary-color);
 }
@@ -106,11 +103,15 @@ div.sektsioon {
 
 .avakuva {
     text-align: center;
+    background: url("../Pildid_avaleht/taustapilt_veebileht.jpg");
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
 }
 
 .avakuva-cta img {
-    opacity: 0;
-    height: 40px;
+    display: none;
 }
 
 .vasak-tulp .alapealkiri {
@@ -143,10 +144,10 @@ div.sektsioon {
 }
 
 .vasak-tulp .vaata-video-cta {
-    display: flex;
+    display: inline-block;
     text-decoration: none;
     max-width: fit-content;
-    margin-left: 0em;
+    margin-left: 2em;
     margin-top: 0.9em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -156,6 +157,7 @@ div.sektsioon {
     border-radius: 5em;
     font-weight: bold;
     color: rgb(219, 143, 0);
+    background: white;
     transition: 0.2s;
 }
 .vasak-tulp .vaata-video-cta:hover {
@@ -228,6 +230,14 @@ h2 {
     font-size: 2em;
 }
 
+.kontakti-sektsioon {
+    background: url("../Pildid_avaleht/taustapilt_veebileht.png");
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
 label {
     display: block;
     font-size: 1.2em;
@@ -291,17 +301,15 @@ iframe {
 
 nav.menu-btn {
     display: block;
-}
-
-nav {
     position: fixed;
     z-index: 999;
-    width: 40%;
-    right: 0;
+    width: 218px;
+    right: -250px;
     top: 0;
     background: #20272E;
     height: 100vh;
     padding: 1em;
+    transition: right 0.4s ease-in-out;
 }
 nav ul.peamine-nav {
     margin-top: 5em;
@@ -332,7 +340,6 @@ nav li a {
         );
         background-size: 200% 100%;
         background-position: -100%;
-        display: left;
         text-align: center;
         padding: 5px 0;
         margin-bottom: 25px;
@@ -361,7 +368,7 @@ nav li a {
       
     a.little-menu:hover::before {
         width: 100%;
-    }
+    }   
 }
 
 @media only screen and (min-width: 768px) {
@@ -372,6 +379,9 @@ nav li a {
         display: grid;
         grid-template-columns: 180px auto;
         justify-content: unset;
+    }
+    .navbar .logo:hover {
+        background-size: 0 3px, 65% 3px;
     }
     .navbar nav {
         display: flex;
@@ -423,6 +433,7 @@ nav li a {
       
     a.animatsioon:hover {
        background-position: 0;
+       cursor: pointer;
     }
       
     a.animatsioon:hover::before {
@@ -449,10 +460,6 @@ nav li a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .avakuva-cta img {
-        margin-left: 0;
     }
 }
 @media only screen and (min-width: 1080px) {
@@ -486,10 +493,15 @@ nav li a {
         margin-right: 1em;
     }
 
+    .vaata-video-cta {
+        margin-left: 0;
+    }
+
     .avakuva-cta img {
         padding-top: 1.6em;
         margin-left: 0.5em;
-        opacity: 1;
+        display: flex;
+        height: 40px;
     }
 
     ul.detailid-loetelu {
@@ -551,7 +563,6 @@ nav li a {
         position: absolute;
         width: 200px;
         height: 20em;
-        background: url("../Pildid_avaleht/punktid.png");
         left: 4.5em;
         top: 2em;
     }
