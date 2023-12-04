@@ -1,3 +1,3 @@
-# Hansu haru
+# Peamine haru
 
-Siin tegutseb Hans Harald Peep, kes arendab rakenduse detailsema tutvustuse alamlehekülge.
+Siia haru peale ilmub terve meie projekt ning kõik sellega seonduvad failid üheskoos. Peamine haru sisaldab avalehe ning kahe alamlehe HTML, CSS, ühe ühise CSS ning ka JS faile.
