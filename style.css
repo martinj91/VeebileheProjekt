@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
-    font-family:Arial, Helvetica, sans-sherif;
-    margin: 20px;
+    background: #F2F2F2;
+    margin: 0;
+    font-family: "Poppins";
 }
 h1,h2 {
-    color: #000000
+    color: #000000;
+    text-align: center;
+}
+h2{
+    color: #007AF3;
+}
+.lehepealkiri{
+    color: black;
 }
 table{
     border-collapse: collapse;
-    margin-top:auto;
-    width:100%;
+    margin:80px;
+    width:80%;
 }
 th,td {
     border: 1px solid #ddd;
@@ -21,4 +31,44 @@ th {
 }
 .plan {
     font-weight: bold;
+}
+section {
+    float: left;
+    margin: 0 40px 0 40px;
+    width: 20%;
+    background: white;
+    border-radius: 1em;
+    padding: 2em;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+}
+.kastid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:80px;
+    justify-content: center;
+}
+.kast{
+    margin-bottom: 40px;
+}
+p{
+    margin: 40px;
+    padding: 40px;
+    border-radius: 1em;
+    background: white;
+}
+
+@media only screen and (max-width: 768px){
+
+}
+span{
+    color: black;
+}
+.tekstid{
+    text-align: center;
 }
