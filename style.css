@@ -5,36 +5,51 @@ body {
     margin: 0;
     font-family: "Poppins";
 }
-h1,h2 {
-    color: #000000;
+h1{
+    color: white;
     text-align: center;
 }
-h2{
-    color: #007AF3;
+h2 {
+    text-align: center;
+    color: black;
+}
+.detailid{
+    background-color: #007AF3;
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 .lehepealkiri{
     color: black;
 }
 table{
-    border-collapse: collapse;
-    margin:80px;
-    width:80%;
+    border-collapse: separate;
+    width:100%;
+    border-spacing: 20px;
+}
+.tabel{
+    display: inline-block;
+    padding: 80px;
+    background-color: #20272e;
 }
 th,td {
-    border: 1px solid #ddd;
-    padding:10px;
+    border: transparent;
+    border-radius: 5em;
+    padding:20px;
     text-align: center;
+    background-color: white;
 }
 th {
-    background-color: #8d8d8d;
+    background-color: #007AF3;
     opacity: 90%;
+    color: white;
+    font-size: 30px;
 }
 .plan {
     font-weight: bold;
 }
 section {
     float: left;
-    margin: 0 40px 0 40px;
+    margin: 0 20px 0 20px;
     width: 20%;
     background: white;
     border-radius: 1em;
@@ -50,25 +65,35 @@ section {
 .kastid{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom:80px;
+    margin-bottom:40px;
     justify-content: center;
 }
-.kast{
+.kast2{
     margin-bottom: 40px;
+    width: 25%;
 }
+.kast2 div{
+    position: relative;
+}
+
 p{
     margin: 40px;
     padding: 40px;
     border-radius: 1em;
     background: white;
 }
-
-@media only screen and (max-width: 768px){
-
-}
 span{
-    color: black;
+    color: #007AF3;
 }
 .tekstid{
     text-align: center;
+}
+@media only screen and (max-width:800px){
+    .kastid{
+        flex-direction: column;
+    }
+    .kast2{
+        display: inline-block;
+        width: auto;
+    }
 }
