@@ -112,7 +112,7 @@ h1 span {
 
 
 .pricing-plan ul li::before {
-    content: url('images/checkmark.png');
+    content: url('Images/checkmark.png');
     position: absolute;
     transform: translateY(-25%) translateX(-200%)scale(0.1);
     width: 20px;
