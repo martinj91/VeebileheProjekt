@@ -103,7 +103,7 @@ div.sektsioon {
 
 .avakuva {
     text-align: center;
-    background: url("/Pildid_avaleht/taustapilt_veebileht.jpg");
+    background: url("../Pildid_avaleht/taustapilt_veebileht.jpg");
     background-color: rgba(255, 255, 255, 0.9);
     background-size: cover;
     background-repeat: no-repeat;
@@ -231,7 +231,7 @@ h2 {
 }
 
 .kontakti-sektsioon {
-    background: url("/Pildid_avaleht/taustapilt_veebileht.png");
+    background: url("../Pildid_avaleht/taustapilt_veebileht.png");
     background-color: rgba(255, 255, 255, 0.9);
     background-size: cover;
     background-repeat: no-repeat;
