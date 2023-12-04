@@ -230,6 +230,14 @@ h2 {
     font-size: 2em;
 }
 
+.kontakti-sektsioon {
+    background: url("/Pildid_avaleht/taustapilt_veebileht.png");
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
 label {
     display: block;
     font-size: 1.2em;
@@ -525,11 +533,6 @@ nav li a {
     }
     .kontakti-sektsioon {
         position: relative;
-        background: url("/Pildid_avaleht/taustapilt_veebileht.png");
-        background-color: rgba(255, 255, 255, 0.9);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
     }
     .kontakti-sektsioon .kast {
         display: flex;
