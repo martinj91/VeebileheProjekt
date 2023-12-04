@@ -27,7 +27,7 @@ table{
     border-spacing: 20px;
 }
 .tabel{
-    display: inline-block;
+    display: flex;
     padding: 80px;
     background-color: #20272e;
 }
