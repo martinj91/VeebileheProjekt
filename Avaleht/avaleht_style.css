@@ -47,7 +47,7 @@ body {
     padding: 1em;
 }
 
-/*https://css-tricks.com/css-link-hover-effects/*/
+/* https://css-tricks.com/css-link-hover-effects/ */
 .navbar .logo {
     text-decoration: none;
     font-weight: bold;
@@ -70,7 +70,7 @@ body {
         background-repeat: no-repeat;
         transition: 400ms;
 }
-/*https://css-tricks.com/css-link-hover-effects/*/
+/* https://css-tricks.com/css-link-hover-effects/ : selle kaudu lõin logole laheda hover animatsiooni*/
 
 .navbar .logo span {
     color: var(--primary-color);
@@ -334,7 +334,7 @@ nav li a {
 }
 
 @media only screen and (max-width: 768px) {
-    /*https://css-tricks.com/css-link-hover-effects/*/
+    /* https://css-tricks.com/css-link-hover-effects/ */
     a.little-menu {
         background-image: linear-gradient(
           to right,
@@ -365,7 +365,7 @@ nav li a {
         height: 3px;
         transition: all 0.2s ease-in-out;
     }
-    /*https://css-tricks.com/css-link-hover-effects/*/
+    /* https://css-tricks.com/css-link-hover-effects/ : selle kaudu sain luua linkidele laheda hover animatsiooni*/
       
     a.little-menu:hover {
        background-position: 0;

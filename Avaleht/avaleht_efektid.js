@@ -13,7 +13,7 @@ mobileBtnExit.addEventListener('click', () => {
     sisu.style.marginRight = '0';
 })
 
-// https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/ //
+// https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/ : tekitasin selle skriptiga nupu, mis ilmub siis, kui kasutaja on kerinud rohkem kui 90% veebilehe ulatuses alla, et saaks mugavalt ühe klikiga tagasi avalehe ülalossa kerida.//
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 var rootElement = document.documentElement;
 
@@ -36,7 +36,7 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
 // https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/ //
 
-// https://www.youtube.com/watch?v=2ak37WrbSDg //
+// https://www.youtube.com/watch?v=2ak37WrbSDg : tekitasin sellega veebilehe alglaadimise animatsiooni, mis kuvab kõigepealt hüpleval viisil logo ning seejärel avaneb sujuvalt vaade kogu avalehele tumeda tausta tagant//
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-päis');
 let logoSpan = document.querySelectorAll('.logo-intro');
@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 })
 // https://www.youtube.com/watch?v=2ak37WrbSDg //
 
-// https://www.youtube.com/watch?v=IxziwuuaS3c&t=1398s //
+// https://www.youtube.com/watch?v=IxziwuuaS3c&t=1398s : selle skripti abil tekitasin kontrolli kontaktivormi täitmise üle, et tekiksid punast värvi errorid, kui kõik lahtrid ei ole täidetud ning ka e-mail ei ole korrektsel kujul sisestatud.//
 const form = document.querySelector("form");
 const fullName =  document.getElementById("fullName");
 const email = document.getElementById("email");
