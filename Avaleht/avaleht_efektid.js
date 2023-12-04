@@ -13,6 +13,7 @@ mobileBtnExit.addEventListener('click', () => {
     sisu.style.marginRight = '0';
 })
 
+// https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/ //
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 var rootElement = document.documentElement;
 
@@ -33,7 +34,9 @@ function scrollToTop() {
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
+// https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/ //
 
+// https://www.youtube.com/watch?v=2ak37WrbSDg //
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-päis');
 let logoSpan = document.querySelectorAll('.logo-intro');
@@ -62,7 +65,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
         }, 2200)
     })
 })
+// https://www.youtube.com/watch?v=2ak37WrbSDg //
 
+// https://www.youtube.com/watch?v=IxziwuuaS3c&t=1398s //
 const form = document.querySelector("form");
 const fullName =  document.getElementById("fullName");
 const email = document.getElementById("email");
@@ -156,3 +161,4 @@ form.addEventListener("submit", (e) => {
         return false;
     }
 });
+// https://www.youtube.com/watch?v=IxziwuuaS3c&t=1398s //

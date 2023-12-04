@@ -47,6 +47,7 @@ body {
     padding: 1em;
 }
 
+/*https://css-tricks.com/css-link-hover-effects/*/
 .navbar .logo {
     text-decoration: none;
     font-weight: bold;
@@ -68,7 +69,9 @@ body {
         background-position: 100% 100%, 0 100%;
         background-repeat: no-repeat;
         transition: 400ms;
-} 
+}
+/*https://css-tricks.com/css-link-hover-effects/*/
+
 .navbar .logo span {
     color: var(--primary-color);
 }
@@ -331,6 +334,7 @@ nav li a {
 }
 
 @media only screen and (max-width: 768px) {
+    /*https://css-tricks.com/css-link-hover-effects/*/
     a.little-menu {
         background-image: linear-gradient(
           to right,
@@ -361,6 +365,7 @@ nav li a {
         height: 3px;
         transition: all 0.2s ease-in-out;
     }
+    /*https://css-tricks.com/css-link-hover-effects/*/
       
     a.little-menu:hover {
        background-position: 0;
