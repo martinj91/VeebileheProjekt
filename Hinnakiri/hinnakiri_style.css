@@ -129,6 +129,7 @@ h1 span {
 }
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .contact {
